@@ -1,0 +1,1 @@
+# fastapi-i18n
