@@ -47,7 +47,7 @@ Language files is based on simple JSON data format.
 ```
 
 # index.html
-To keep things simple, this tutorial will use a modified version of ![apartment rental HTML template made by W3.CSS]https://www.w3schools.com/w3css/tryw3css_templates_apartment_rental.htm)
+To keep things simple, this tutorial will use a modified version of [apartment rental HTML template made by W3.CSS](https://www.w3schools.com/w3css/tryw3css_templates_apartment_rental.htm)
 
 # myapp_rental.py
 Complete code for FastAPI server
