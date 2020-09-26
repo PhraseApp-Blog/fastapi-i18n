@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title>{{ webpage_title }}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.mySlides {display: none}
+</style>
+<body class="w3-border-left w3-border-right">
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-black w3-xlarge">
+  <span class="w3-bar-item">{{ for_rent }}</span>
+</header>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-white">
+
+  <img src="{{ url_for('static', path='/diningroom.jpg') }}" style="width:100%;margin-bottom:-6px">
+
+  <div class="w3-container">
+    <h4><strong>{{ details }}</strong></h4>
+    <div class="w3-row w3-large">
+      <div class="w3-col s6">
+        <p><i class="fa fa-fw fa-male"></i> {{ max_people }}: 4</p>
+        <p><i class="fa fa-fw fa-bath"></i> {{ bathroom }}: 2</p>
+        <p><i class="fa fa-fw fa-bed"></i> {{ bedroom }}: 1</p>
+      </div>
+      <div class="w3-col s6">
+        <p><i class="fa fa-fw fa-clock-o"></i> {{ check_in }}</p>
+        <p><i class="fa fa-fw fa-clock-o"></i> {{ check_out }}</p>
+      </div>
+    </div>
+    <hr>
+
+    <h4><strong>{{ amenities }}</strong></h4>
+    <div class="w3-row w3-large">
+      <div class="w3-col s6">
+        <p><i class="fa fa-fw fa-shower"></i> {{ shower }}</p>
+        <p><i class="fa fa-fw fa-wifi"></i> {{ wifi }}</p>
+        <p><i class="fa fa-fw fa-tv"></i> {{ television }}</p>
+      </div>
+      <div class="w3-col s6">
+        <p><i class="fa fa-fw fa-cutlery"></i> {{ kitchen }}</p>
+        <p><i class="fa fa-fw fa-thermometer"></i> {{ heating }}</p>
+        <p><i class="fa fa-fw fa-wheelchair"></i> {{ accessible }}</p>
+      </div>
+    </div>
+    <hr>
+
+    <h4><strong>{{ extra_info_title }}</strong></h4>
+    <p>{{ extra_info_text }}</p>
+    <p>{{ we_accept }}: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
+    <hr>
+
+  </div>
+
+  <footer class="w3-container w3-padding-16" style="margin-top:32px">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></footer>
+
+<!-- End page content -->
+</div>
+
+</body>
+</html>

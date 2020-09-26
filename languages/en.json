@@ -1,0 +1,20 @@
+{
+  "webpage_title": "MyRental",
+  "for_rent": "For Rent",
+  "details": "Details",
+  "max_people": "Max people",
+  "bathroom": "Bathrooms",
+  "bedroom": "Bedrooms",
+  "check_in": "Check In: After 3PM",
+  "check_out": "Check Out: 12PM",
+  "amenities": "Amenities",
+  "shower": "Shower",
+  "wifi": "WiFi",
+  "television": "TV",
+  "kitchen": "Kitchen",
+  "heating": "Heating",
+  "accessible": "Accessible",
+  "extra_info_title": "Extra Info",
+  "extra_info_text": "Our apartment is really clean and we like to keep it that way. Enjoy the beautiful scenery around the building.",
+  "we_accept": "We accept"
+}
