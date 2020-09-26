@@ -1,4 +1,4 @@
-# Internationalize Your FastAPI Application
+# Introduction to i18n in FastAPI
 This tutorial will show you how do internationalization in your FastAPI application. We are going to make full use of the glob and json modules in creating a multilingual room rental application.
 
 # Setup
@@ -47,12 +47,10 @@ Language files is based on simple JSON data format.
 ```
 
 # index.html
-To keep things simple, this tutorial will use a modified version of [analytic dashboard HTML template made by W3.CSS]https://www.w3schools.com/w3css/tryw3css_templates_apartment_rental.htm)
+To keep things simple, this tutorial will use a modified version of ![apartment rental HTML template made by W3.CSS]https://www.w3schools.com/w3css/tryw3css_templates_apartment_rental.htm)
 
-![Screenshot of the original version](wfng-html-dashboard.png)
-
-# myapp.py
-Complete code for Flask server
+# myapp_rental.py
+Complete code for FastAPI server
 
 ```python
 from fastapi import FastAPI, Request
@@ -71,7 +69,7 @@ templates = Jinja2Templates(directory="templates")
 app_language = 'en'
 languages = {}
 
-language_list = glob.glob("language/*.json")
+language_list = glob.glob("languages/*.json")
 for lang in language_list:
     filename = lang.split('\\')
     lang_code = filename[1].split('.')[0]
@@ -99,7 +97,7 @@ Webpage for English (default)
 
     http://localhost:8000/rental/en
 
-![Example of web page output in English/Singapore](myapp-rental-en.png)
+![Example of web page output in English](myapp-rental-en.png)
 
 For German internationalization, go to the following url
 
