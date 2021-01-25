@@ -28,7 +28,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
       <div class="w3-col s6">
         <p><i class="fa fa-fw fa-male"></i> {{ max_people }}: 4</p>
         <p><i class="fa fa-fw fa-bath"></i> {{ bathroom }}: 2</p>
-        <p><i class="fa fa-fw fa-bed"></i> {{ bedroom }}: 1</p>
+        <p><i class="fa fa-fw fa-bed"></i> {{ bedroom | plural_formatting(bedroom_value, locale) }}: {{ bedroom_value }}</p>
       </div>
       <div class="w3-col s6">
         <p><i class="fa fa-fw fa-clock-o"></i> {{ check_in }}</p>

@@ -5,6 +5,7 @@
   "max_people": "Max Personen",
   "bathroom": "Badezimmer",
   "bedroom": "Schlafzimmer",
+  "bedroom_plural": "Schlafzimmer",
   "check_in": "Check-in: Nach 15:00 Uhr",
   "check_out": "Auschecken: 12 Uhr",
   "amenities": "Ausstattung",
